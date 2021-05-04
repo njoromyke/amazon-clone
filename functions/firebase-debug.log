@@ -1,0 +1,39 @@
+[debug] [2021-05-04T17:34:41.097Z] ----------------------------------------------------------------------
+[debug] [2021-05-04T17:34:41.100Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2021-05-04T17:34:41.100Z] CLI Version:   9.10.0
+[debug] [2021-05-04T17:34:41.100Z] Platform:      win32
+[debug] [2021-05-04T17:34:41.101Z] Node Version:  v15.14.0
+[debug] [2021-05-04T17:34:41.102Z] Time:          Tue May 04 2021 20:34:41 GMT+0300 (East Africa Time)
+[debug] [2021-05-04T17:34:41.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-04T17:34:41.139Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-04T17:34:41.139Z] > authorizing via signed-in user (wanjiku.njoroge2019@students.jkuat.ac.ke)
+[debug] [2021-05-04T17:34:41.139Z] [iam] checking project clone-99968 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-05-04T17:34:41.141Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-04T17:34:41.142Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-04T17:34:41.618Z] <<< HTTP RESPONSE 200 {"date":"Tue, 04 May 2021 17:34:41 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-04T17:34:41.713Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-99968:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2021-05-04T17:34:43.437Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 04 May 2021 17:34:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1312","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-04T17:34:43.439Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-99968/serviceAccounts/clone-99968@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-05-04T17:34:45.056Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 04 May 2021 17:34:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-99968'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2021-05-04T17:35:35.961Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-99968/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2021-05-04T17:35:35.962Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-99968/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-05-04T17:35:35.962Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-99968/services/cloudbuild.googleapis.com  
+ 
+[debug] [2021-05-04T17:35:48.083Z] Error: getaddrinfo ENOTFOUND serviceusage.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:69:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND serviceusage.googleapis.com
